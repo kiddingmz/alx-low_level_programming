@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include<unistd.h>
 
 /**
  * main - Entry point
@@ -9,6 +8,10 @@
 
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char ms[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int ta = sizeof(ms) / sizeof(char);
+
+	write(1, ms, ta);
+
 	return (1);
 }
