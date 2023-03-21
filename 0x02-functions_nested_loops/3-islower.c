@@ -3,6 +3,9 @@
 /**
  * _islower - check the caractere is lowercase
  *
+ * @c: Number to pass to _islower function
+ *
+ * Return: 0 or 1
  */
 
 int _islower(int c)
