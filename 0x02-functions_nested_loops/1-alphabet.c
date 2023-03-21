@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - print alphabet
+ * print_alphabet - print the alphabet use _putchar
  *
- * 
  */
 
 void print_alphabet(void)
@@ -12,6 +11,5 @@ void print_alphabet(void)
 
 	for (; i <= 122;)
 		_putchar(i++);
-
 	_putchar('\n');
 }
