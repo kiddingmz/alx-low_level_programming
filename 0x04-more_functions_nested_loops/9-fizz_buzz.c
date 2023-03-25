@@ -20,7 +20,9 @@ int main(void)
 			printf("FizzBuzz");
 		else
 			printf("%d", i);
-		putchar(' ');
+
+		if (i != 100)
+			putchar(' ');
 	}
 	putchar('\n');
 	return (0);
