@@ -13,7 +13,7 @@ void puts_half(char *str)
 	int c = 0, mid = 0;
 
 	for (; *t != '\0'; c++, t++)
-	
+
 	mid = (c - 1) / 2 + 1;
 	if ((c % 5 == 0) && !(c % 10 == 0))
 		mid++;
