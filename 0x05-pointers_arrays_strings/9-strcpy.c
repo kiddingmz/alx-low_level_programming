@@ -17,6 +17,6 @@ char *_strcpy(char *dest, char *src)
 	for (; *s != '\0'; c++, s++)
 		*(dest + c) = *(src + c);
 
-	dest[++c] = '\0';
+	dest[c] = '\0';
 	return (dest);
 }
