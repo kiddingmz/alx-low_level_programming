@@ -18,7 +18,7 @@ void rev_string(char *s)
 		t++;
 	}
 
-	while (u++ < c--)
+	while (++u < --c)
 	{
 		n = *(s + u);
 		*(s + u) = *(s + c);
