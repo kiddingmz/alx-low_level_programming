@@ -10,19 +10,18 @@
 
 char *cap_string(char *s)
 {
-	int j = 0;
-	int c = 0;
+	int j = 0, c = 0;
 	int cara[] = {9, 10, 123, 125, 44, 46, 59, 63, 33, 34, 40, 41, 32};
 
 	while (s[j] != '\0')
 	{
+		if (j == 0 && s[j] >= 97 && s[j] <= 122)
+			s[j] = s[j] - 32;
 		c = 0;
 		while (c <= 13)
 		{
 			if (s[j] == cara[c])
 			{
-				if (s[j] == cara[0])
-					s[j] = 32;
 				if (s[j + 1] >= 97 && s[j + 1] <= 122)
 					s[j + 1] = s[j + 1] - 32;
 			}
