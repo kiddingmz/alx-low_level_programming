@@ -21,6 +21,8 @@ char *cap_string(char *s)
 		{
 			if (s[j] == cara[c])
 			{
+				if (s[j] == cara[0])
+					s[j] = 32;
 				if (s[j + 1] >= 97 && s[j + 1] <= 122)
 					s[j + 1] = s[j + 1] - 32;
 			}
