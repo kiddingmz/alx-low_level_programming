@@ -1,7 +1,7 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * lett - Encodesa string
+ * leet - Encodesa string
  *
  * @s: String
  *
