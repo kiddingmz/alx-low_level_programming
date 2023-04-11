@@ -36,6 +36,11 @@ int main(int argc, char *argv[])
 		}
 		else if (atoi(argv[i]) > 0)
 			sum += atoi(argv[i]);
+		else
+		{
+			printf("Error");
+			return (1);
+		}
 	}
 	printf("%ld\n", sum);
 	return (0);
