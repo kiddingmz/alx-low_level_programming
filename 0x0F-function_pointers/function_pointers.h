@@ -1,0 +1,6 @@
+#ifndef F_POINTERS
+#define F_POINTERS
+
+void print_name(char *name, void (*f)(char *));
+
+#endif
