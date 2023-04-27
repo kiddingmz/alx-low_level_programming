@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_lists - frees a list_t
+ * free_list - frees a list_t
  *
  * @head: struct
  *
