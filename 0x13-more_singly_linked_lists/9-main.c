@@ -13,6 +13,9 @@ int main(void)
     listint_t *head;
 
     head = NULL;
+    insert_nodeint_at_index(&head, 0, 100);
+    insert_nodeint_at_index(&head, 0, 400);
+    insert_nodeint_at_index(&head, 5, 400);
     add_nodeint_end(&head, 0);
     add_nodeint_end(&head, 1);
     add_nodeint_end(&head, 2);
