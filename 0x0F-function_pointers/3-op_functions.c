@@ -3,8 +3,8 @@
 /**
  * op_add - sum a and b
  *
- * @a: firt integer
- * @b: second integer
+ * @a: firt int
+ * @b: second int
  *
  * Return: sum of a and b
  */
