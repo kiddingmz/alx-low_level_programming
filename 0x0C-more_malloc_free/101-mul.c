@@ -9,7 +9,7 @@ int _strlen(char *s);
 char *strmul(char *a, char *b);
 
 /**
- * _calloc - allocate 
+ * _calloc - allocate
  *
  * @nmemb: elements
  * @size: size
@@ -68,10 +68,10 @@ void _puts(char *s)
 }
 
 /**
- * rev_num_str - reverse 
+ * rev_num_str - reverse
  *
  * @start: start
- * @end: end 
+ * @end: end
  * @ns: string
  *
  * Return: nothing
