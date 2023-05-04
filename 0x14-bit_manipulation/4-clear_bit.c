@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * clear_bit - sets value of a bit 
+ * clear_bit - sets value of a bit
  *
  * @n: first param
  * @index: index
