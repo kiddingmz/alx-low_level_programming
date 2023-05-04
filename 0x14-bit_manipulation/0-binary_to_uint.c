@@ -11,7 +11,9 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int ui;
-
+	
+	if (b == ((void *)0))
+		return (0);
 	ui = 0;
 	while (*b)
 	{
