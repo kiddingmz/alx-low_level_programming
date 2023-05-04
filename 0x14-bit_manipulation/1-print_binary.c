@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_binary - print binary
@@ -21,12 +20,12 @@ void print_binary(unsigned long int n)
 		decimal = n >> i;
 		if (decimal & 1)
 		{
-			putchar('1');
+			_putchar('1');
 			c++;
 		}
 		else if (decimal)
-			putchar('0');
+			_putchar('0');
 	}
 	if (!c)
-		putchar('0');
-}	
+		_putchar('0');
+}
