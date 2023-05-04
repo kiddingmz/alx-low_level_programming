@@ -14,9 +14,9 @@ void print_binary(unsigned long int n)
 	unsigned int i, c;
 	unsigned long int decimal;
 
-	i = 64;
+	i = 63;
 	c = 0;
-	while (--i)
+	while (i--)
 	{
 		decimal = n >> i;
 		if (decimal & 1)
