@@ -1,7 +1,12 @@
 #include "main.h"
 
 /**
+ * flip_bits - flip to get one number
  *
+ * @n: first param
+ * @m: second param
+ *
+ * Return: unsigned int
  *
  */
 
@@ -15,7 +20,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	e = n ^ m;
 	while (i--)
 	{
-		bit= e >> i;
+		bit = e >> i;
 		if (bit & 1)
 			c++;
 	}
