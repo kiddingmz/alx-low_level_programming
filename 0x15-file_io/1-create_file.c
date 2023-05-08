@@ -20,10 +20,12 @@ int create_file(const char *filename, char *text_content)
 	file = open(filename, O_CREAT | O_RDWR | O_TRUNC, 00600);
 	if (file == -1)
 		return (-1);
-	wc = -1;
-	while (text_content != NULL && text_content[++wc] != '\0')
-		;
-
+	wc = 0;
+	if (text_content != NULL)
+	{
+		while (text_content[wc] != '\0')
+			wc++;
+	}
 	w = write(file, text_content, wc);
 	if (w == -1)
 		return (-1);
