@@ -1,31 +1,31 @@
 #include "main.h"
 
 /**
- * __exit - print error message
+ * __exit - print error
  *
- * @error: file descriptor
- * @str: file_in or file_out
- * @fd: descriptor
+ * @err: error
+ * @str: file
+ * @fd: fd
  *
  * Return: 0
 */
 
-int __exit(int error, char *str, int fd)
+int __exit(int err, char *str, int fd)
 {
-	switch (error)
+	switch (err)
 	{
 		case 97:
 			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-			exit(error);
+			exit(err);
 		case 98:
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str);
-			exit(error);
+			exit(err);
 		case 99:
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str);
-			exit(error);
+			exit(err);
 		case 100:
 			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
-			exit(error);
+			exit(err);
 		default:
 			return (0);
 	}
@@ -34,8 +34,8 @@ int __exit(int error, char *str, int fd)
 /**
  * main - entry point
  *
- * @argc: argument counter
- * @argv: argument vector
+ * @argc: argc
+ * @argv: argv
  *
  * Return: 0
 */
